@@ -33,6 +33,6 @@ function getValueUser () {
     }
 }
 
-// to do : problem to define the display of the div 'in'. I can change any style and i cant see
+// to do : problem to define the display of the div 'in'(l15 html). I can change any style and i cant see
 // the style in the dev tools...
 
