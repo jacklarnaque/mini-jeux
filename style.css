@@ -10,7 +10,3 @@ h1 {
     align-items: center;
 };
 
-body.in {
-   display: none;
-   background-color: aqua;
-}
