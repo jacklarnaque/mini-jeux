@@ -1,4 +1,4 @@
-Ce projet est une plateforme de mini jeux coder par mes soins.
+Ce projet est une plateforme de mini jeux
 Le but est de faire vivre ce site en y ajoutant plusieurs mini-jeux qui viendrons s'ajouter au fil du temps;
 La première appication est un juste prix.
 
