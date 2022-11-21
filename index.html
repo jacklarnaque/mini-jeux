@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="counter-animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8f9f309d6f.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
-    <div class="container">
+    <div class="main-container">
+        <div class="animation">
+            <div class="container", id="content">
+                <div class="dot"></div>
+            </div>
+        </div>
         <h1 class="animate">Le juste prix</h1>
             <div>
                 <button id="playButton" class="button-play">Play!</button>
@@ -23,6 +29,7 @@
             <input type="text", id="input" type="number" placeholder="Votre réponse:">
             <button onclick="getValueUser()" class="button-ok">ok</button>
         </div>
+        <div class="counter" id="counter"></div>
     </div>
 </body>
 <script src="app.js"></script>

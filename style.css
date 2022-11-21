@@ -1,7 +1,4 @@
-body {
-    margin: 2%;
-    padding: 2%;
-}
+
 
 h1 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -9,14 +6,16 @@ h1 {
 
 .in {
     display: none;
+  
 }
 .question {
+    padding: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
+.main-container {
     padding: 10px;
     text-align: center;
     border-left-style: solid;
@@ -24,6 +23,7 @@ h1 {
 }
 
 .animate, .button-play, .button-ok {
+
     text-transform: uppercase;
     background-image: linear-gradient(
     -225deg,
@@ -71,7 +71,7 @@ button:hover {
 
 )}
  .button-ok {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 1%;
 
  }
@@ -79,4 +79,17 @@ button:hover {
   input {
     margin-right: 1%;
     margin-top: 1%;
+    font-size: 1.5rem;
   }
+ .counter {
+  padding: 10%;
+  font-size: 3rem;
+
+ }
+
+ .NumbersRange {
+  font-size: 2rem;
+  padding: 2%;
+  text-align: center;
+  color: #000000;
+ }

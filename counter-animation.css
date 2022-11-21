@@ -1,0 +1,304 @@
+body {
+	margin: 2%;
+	padding: 2%;
+}
+@media screen and (min-height: 700px) {
+.NumbersRange {
+	color: rgb(255, 255, 255)
+}
+.counter {
+	color: white
+}
+	@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+	body {
+		background: #15191F;
+	}
+	
+.container {
+  position: absolute;
+  height: 300px;
+  width: 400px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	}
+	.container .dot {
+		height: 5px;
+  width: 5px;
+  background: #CC2B4A;
+  border-radius: 50%;
+  -webkit-animation: scaling 12s;
+		animation: scaling 12s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.container::before {
+	padding-right: 190px;
+	position: absolute;
+	top: 35%;
+	right: 30%;
+	font-size: 60px;
+	font-family: "Open Sans";
+	color: #CC2B4A;
+	content: "1";
+	-webkit-animation: swiping 12s;
+	animation: swiping 12s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes scaling {
+	8.3% {
+		background: #20FBC9;
+		transform: scale(1.3) translateX(0);
+		opacity: 1;
+	}
+	16.6% {
+		background: #CC2B4A;
+		transform: scale(1.6) translateX(0);
+		opacity: 1;
+	}
+	24.9% {
+		background: #20FBC9;
+		transform: scale(1.9) translateX(0);
+		opacity: 1;
+	}
+	32.2% {
+		background: #CC2B4A;
+		transform: scale(2.2) translateX(0);
+		opacity: 1;
+	}
+	41.5% {
+		background: #20FBC9;
+		transform: scale(2.5) translateX(0);
+		opacity: 1;
+	}
+	49.8% {
+		background: #CC2B4A;
+		transform: scale(2.8) translateX(0);
+		opacity: 1;
+	}
+	58.1% {
+		background: #20FBC9;
+		transform: scale(3.1) translateX(0);
+		opacity: 1;
+	}
+	66.4% {
+		background: #CC2B4A;
+		transform: scale(3.5) translateX(0);
+		opacity: 1;
+	}
+	74.7% {
+		background: #20FBC9;
+		transform: scale(4) translateX(0);
+		opacity: 1;
+	}
+	83% {
+		background: #452cdb;
+		transform: scale(10) translateX(-10px);
+		opacity: 1;
+	}
+	90% {
+    background: #452cdb;
+    transform: scale(1) translateX(90px);
+    opacity: 1;
+			}
+			100% {
+				background: #452cdb;
+    transform: scale(1) translateX(90px);
+    opacity: 0;
+			}
+}
+
+@keyframes scaling {
+	8.3% {
+		background: #20FBC9;
+		transform: scale(1.3) translateX(0);
+		opacity: 1;
+	}
+	16.6% {
+		background: #CC2B4A;
+		transform: scale(1.6) translateX(0);
+		opacity: 1;
+	}
+	24.9% {
+		background: #20FBC9;
+		transform: scale(1.9) translateX(0);
+		opacity: 1;
+	}
+	32.2% {
+		background: #CC2B4A;
+		transform: scale(2.2) translateX(0);
+		opacity: 1;
+	}
+	41.5% {
+		background: #20FBC9;
+		transform: scale(2.5) translateX(0);
+		opacity: 1;
+	}
+	49.8% {
+		background: #CC2B4A;
+		transform: scale(2.8) translateX(0);
+		opacity: 1;
+	}
+	58.1% {
+		background: #20FBC9;
+		transform: scale(3.1) translateX(0);
+		opacity: 1;
+	}
+	66.4% {
+		background: #CC2B4A;
+		transform: scale(3.5) translateX(0);
+		opacity: 1;
+	}
+	74.7% {
+		background: #20FBC9;
+		transform: scale(4) translateX(0);
+		opacity: 1;
+	}
+	83% {
+		background: #452cdb;
+		transform: scale(10) translateX(-10px);
+		opacity: 1;
+	}
+	90% {
+		background: #452cdb;
+		transform: scale(1) translateX(90px);
+		opacity: 1;
+	}
+	100% {
+    background: #452cdb;
+    transform: scale(1) translateX(90px);
+    opacity: 0;
+			}
+		}
+		@-webkit-keyframes swiping {
+			8.3% {
+				color: #20FBC9;
+    content: "2";
+    transform: translateX(260px);
+			}
+			16.6% {
+				color: #CC2B4A;
+    content: "3";
+    transform: translateX(0);
+			}
+			24.9% {
+    color: #20FBC9;
+    content: "4";
+    transform: translateX(260px);
+			}
+			32.2% {
+				color: #CC2B4A;
+    content: "5";
+    transform: translateX(0);
+			}
+			41.5% {
+				color: #20FBC9;
+    content: "6";
+    transform: translateX(260px);
+			}
+			49.8% {
+				color: #CC2B4A;
+    content: "7";
+    transform: translateX(0);
+			}
+			58.1% {
+				color: #20FBC9;
+    content: "8";
+    transform: translateX(260px);
+			}
+			66.4% {
+				color: #CC2B4A;
+    content: "9";
+    transform: translateX(0);
+			}
+			74.7% {
+				color: #20FBC9;
+    content: "10";
+    transform: translateX(260px);
+  }
+  74.8% {
+			color: #CC2B4A;
+			content: "";
+			transform: translateX(220px);
+  }
+  80.1% {
+			color: #CC2B4A;
+			content: "";
+			transform: translateX(90px);
+  }
+  100% {
+			color: #452cdb;
+			content: "DONE";
+    transform: translateX(190px);
+			}
+		}
+		@keyframes swiping {
+  8.3% {
+			color: #20FBC9;
+			content: "2";
+			transform: translateX(260px);
+  }
+  16.6% {
+			color: #CC2B4A;
+			content: "3";
+			transform: translateX(0);
+  }
+  24.9% {
+			color: #20FBC9;
+			content: "4";
+			transform: translateX(260px);
+  }
+  32.2% {
+			color: #CC2B4A;
+			content: "5";
+			transform: translateX(0);
+  }
+  41.5% {
+    color: #20FBC9;
+    content: "6";
+    transform: translateX(260px);
+			}
+			49.8% {
+				color: #CC2B4A;
+    content: "7";
+    transform: translateX(0);
+			}
+			58.1% {
+				color: #20FBC9;
+    content: "8";
+    transform: translateX(260px);
+			}
+			66.4% {
+				color: #CC2B4A;
+    content: "9";
+    transform: translateX(0);
+			}
+			74.7% {
+				color: #20FBC9;
+    content: "10";
+    transform: translateX(260px);
+			}
+			74.8% {
+				color: #CC2B4A;
+    content: "";
+    transform: translateX(220px);
+			}
+			80.1% {
+				color: #CC2B4A;
+    content: "";
+    transform: translateX(90px);
+			}
+  100% {
+			color: #452cdb;
+			content: "DONE";
+			transform: translateX(190px);
+  }
+	}
+}

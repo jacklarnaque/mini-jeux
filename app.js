@@ -15,16 +15,17 @@ function getRandomIntInclusive(min, max) {
 let randomNumber = getRandomIntInclusive(1, 3);//from
 let randomNumber2 = getRandomIntInclusive(4, 7);//to
 let numberToFind = getRandomIntInclusive(randomNumber, randomNumber2);//number the user need to guess,
-//have to be between randomNumber & randomNumber2
-
-
 //get the id button 'play' to display the range of numbers
-let playButton = document.getElementById('playButton')
+//have to be between randomNumber & randomNumber2
+const playButton = document.getElementById('playButton')
+
+
 // we use the button 'play' to run the function which will diplay the range
-playButton.addEventListener('click', start); 
+playButton.addEventListener('click', start);
 //this function display the range from the smaller to the bigger number...
 
 function start () {
+    document.getElementById('content').style.display = 'flex'
     document.getElementById('div-input').classList.remove('in')
     if (randomNumber < randomNumber2) {
         document.getElementById('numbersRange').textContent = `Veuillez devinez le prix de cet article..Sa valeur est comprise entre ${randomNumber}
@@ -34,6 +35,24 @@ function start () {
         et ${randomNumber}.`
  }
 }
+
+//counter
+const divelem = document.getElementById("counter")
+TempsRestant = 0;
+playButton.addEventListener('click', function(){
+    setTimeout(function() {
+        TempsRestant = 0;
+        let compteur = setInterval(() => {
+            let answer = document.getElementById("input").value;
+            divelem.innerText = TempsRestant;
+            TempsRestant++;
+            if(answer == numberToFind) {
+                clearInterval(compteur)
+            }
+        }, 1000);
+    }, 5000)
+
+});
 
 // we use the below function to get the user's answer
 
@@ -52,16 +71,12 @@ function getValueUser () {
     } else if(answer < numberToFind){
         document.getElementById('numbersRange').textContent = answer + " is too low! ";
     } else if(answer == numberToFind){
-        document.getElementById('numbersRange').textContent = " You Win! The good number is " + numberToFind + "!";
+        document.getElementById('numbersRange').textContent = " You Win! The good number is " + numberToFind + "! " + "You find it in " + (TempsRestant - 1) + " second!";
+        divelem.style.display = 'none'
+        endGame();
     } else if (answer = String) {
     document.getElementById('numbersRange').textContent = " Ceci n'est pas un nombre! ";
 }
 }
 
 
-/* - TO DO LIST - :
- dont know how to add some style on the .textContent to display a different color belong the users's answer
- Implement a counter to let the user only five try to found the good number.
- dont understand why when the answer is a letter , the program return 'you win
- !!!!how can i force the user to write a number!!!
- */
