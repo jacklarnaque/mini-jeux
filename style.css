@@ -93,3 +93,6 @@ button:hover {
   text-align: center;
   color: #000000;
  }
+.animation {
+  display: none;
+}

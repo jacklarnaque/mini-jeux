@@ -20,13 +20,22 @@ let numberToFind = getRandomIntInclusive(randomNumber, randomNumber2);//number t
 const playButton = document.getElementById('playButton')
 
 
-// we use the button 'play' to run the function which will diplay the range
+// we use the button 'play' to run the function which will display the range
 playButton.addEventListener('click', start);
+playButton.addEventListener('click', beginAnimation);
+function beginAnimation() {
+    setTimeout(() => {
+        document.getElementById('div-input').classList.remove('in')
+        document.getElementById('hourglass').classList.remove('in')
+        document.getElementById('div-input').classList.add('question')
+    },8000)
+    
+    document.getElementById('content').style.display = 'flex'
+}
 //this function display the range from the smaller to the bigger number...
 
+
 function start () {
-    document.getElementById('content').style.display = 'flex'
-    document.getElementById('div-input').classList.remove('in')
     if (randomNumber < randomNumber2) {
         document.getElementById('numbersRange').textContent = `Veuillez devinez le prix de cet article..Sa valeur est comprise entre ${randomNumber}
         et ${randomNumber2}.`;
@@ -40,6 +49,7 @@ function start () {
 const divelem = document.getElementById("counter")
 TempsRestant = 0;
 playButton.addEventListener('click', function(){
+    
     setTimeout(function() {
         TempsRestant = 0;
         let compteur = setInterval(() => {
@@ -50,9 +60,10 @@ playButton.addEventListener('click', function(){
                 clearInterval(compteur)
             }
         }, 1000);
-    }, 5000)
-
-});
+    }, 
+    6000)
+//one : true is to avoid the multiples clicks
+}, {once: true});
 
 // we use the below function to get the user's answer
 

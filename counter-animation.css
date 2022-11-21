@@ -4,7 +4,7 @@ body {
 }
 @media screen and (min-height: 700px) {
 .NumbersRange {
-	color: rgb(255, 255, 255)
+	color: rgba(255, 255, 255, 0.938)
 }
 .counter {
 	color: white
@@ -13,7 +13,12 @@ body {
 	body {
 		background: #15191F;
 	}
-	
+	.main-container {
+		border-color: rgba(255, 255, 255, 0.444);
+}
+	i {
+		color: rgba(6, 92, 167, 0.954);
+	}
 .container {
   position: absolute;
   height: 300px;
@@ -45,7 +50,7 @@ body {
 	font-size: 60px;
 	font-family: "Open Sans";
 	color: #CC2B4A;
-	content: "1";
+	content: "Ready?";
 	-webkit-animation: swiping 12s;
 	animation: swiping 12s;
 	-webkit-animation-fill-mode: forwards;
@@ -177,112 +182,51 @@ body {
     opacity: 0;
 			}
 		}
-		@-webkit-keyframes swiping {
-			8.3% {
-				color: #20FBC9;
-    content: "2";
-    transform: translateX(260px);
-			}
-			16.6% {
-				color: #CC2B4A;
-    content: "3";
-    transform: translateX(0);
-			}
-			24.9% {
-    color: #20FBC9;
-    content: "4";
-    transform: translateX(260px);
-			}
-			32.2% {
-				color: #CC2B4A;
-    content: "5";
-    transform: translateX(0);
-			}
-			41.5% {
-				color: #20FBC9;
-    content: "6";
-    transform: translateX(260px);
-			}
-			49.8% {
-				color: #CC2B4A;
-    content: "7";
-    transform: translateX(0);
-			}
-			58.1% {
-				color: #20FBC9;
-    content: "8";
-    transform: translateX(260px);
-			}
-			66.4% {
-				color: #CC2B4A;
-    content: "9";
-    transform: translateX(0);
-			}
-			74.7% {
-				color: #20FBC9;
-    content: "10";
-    transform: translateX(260px);
-  }
-  74.8% {
-			color: #CC2B4A;
-			content: "";
-			transform: translateX(220px);
-  }
-  80.1% {
-			color: #CC2B4A;
-			content: "";
-			transform: translateX(90px);
-  }
-  100% {
-			color: #452cdb;
-			content: "DONE";
-    transform: translateX(190px);
-			}
-		}
+
 		@keyframes swiping {
   8.3% {
 			color: #20FBC9;
-			content: "2";
+			content: "Ready?";
 			transform: translateX(260px);
   }
   16.6% {
 			color: #CC2B4A;
-			content: "3";
+			content: "Ready?";
 			transform: translateX(0);
   }
   24.9% {
 			color: #20FBC9;
-			content: "4";
+			content: "3";
 			transform: translateX(260px);
   }
   32.2% {
 			color: #CC2B4A;
-			content: "5";
+			content: "2";
 			transform: translateX(0);
   }
   41.5% {
     color: #20FBC9;
-    content: "6";
+    content: "1";
     transform: translateX(260px);
 			}
 			49.8% {
 				color: #CC2B4A;
-    content: "7";
+    content: "Go!";
     transform: translateX(0);
 			}
 			58.1% {
 				color: #20FBC9;
-    content: "8";
+    content: "";
     transform: translateX(260px);
 			}
 			66.4% {
 				color: #CC2B4A;
-    content: "9";
+    content: "";
     transform: translateX(0);
 			}
 			74.7% {
 				color: #20FBC9;
-    content: "10";
+    content: "";
     transform: translateX(260px);
 			}
 			74.8% {
@@ -297,7 +241,7 @@ body {
 			}
   100% {
 			color: #452cdb;
-			content: "DONE";
+			content: "";
 			transform: translateX(190px);
   }
 	}
