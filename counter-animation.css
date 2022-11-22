@@ -2,9 +2,15 @@ body {
 	margin: 2%;
 	padding: 2%;
 }
-@media screen and (min-height: 700px) {
+@media screen and (min-height: 660px) {
 .NumbersRange {
 	color: rgba(255, 255, 255, 0.938)
+}
+.box-input {
+	text-align: justify;
+}
+#input {
+	width: 60%;
 }
 .counter {
 	color: white

@@ -26,7 +26,7 @@ playButton.addEventListener('click', beginAnimation);
 function beginAnimation() {
     setTimeout(() => {
         document.getElementById('div-input').classList.remove('in')
-        document.getElementById('hourglass').classList.remove('in')
+        document.getElementById('button-ok').classList.remove('in')
         document.getElementById('div-input').classList.add('question')
     },8000)
     
