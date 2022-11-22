@@ -37,10 +37,10 @@ function beginAnimation() {
 
 function start () {
     if (randomNumber < randomNumber2) {
-        document.getElementById('numbersRange').textContent = `Guess the price of this article..The value is between ${randomNumber}
+        document.getElementById('numbersRange').textContent = `Guess the price...The value is between ${randomNumber}
         and ${randomNumber2}.`;
     } else if (randomNumber > randomNumber2) {
-        document.getElementById('numbersRange').textContent = `Guess the price of this article..The value is between ${randomNumber2}
+        document.getElementById('numbersRange').textContent = `Guess the price...The value is between ${randomNumber2}
         and ${randomNumber}.`
  }
 }
