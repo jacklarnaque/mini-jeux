@@ -41,7 +41,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 50px;
+    font-size: 1rem;
 }
 
 @keyframes textclip {
@@ -79,16 +79,16 @@ button:hover {
   input {
     margin-right: 1%;
     margin-top: 1%;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
  .counter {
-  padding: 10%;
+  padding: 5%;
   font-size: 3rem;
 
  }
 
  .NumbersRange {
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 2%;
   text-align: center;
   color: #000000;

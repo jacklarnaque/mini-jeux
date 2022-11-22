@@ -2,16 +2,23 @@ body {
 	margin: 2%;
 	padding: 2%;
 }
-@media screen and (min-height: 660px) {
+@media screen and (min-height: 850px) {
+	.animate, .button-play , #button-ok, .NumbersRange, .button-play-again {
+		font-size: 2rem;
+	}
+	.animate , .button-play ,#button-ok {
+		font-size: 3rem;
+	}
+}
+
 .NumbersRange {
 	color: rgba(255, 255, 255, 0.938)
 }
 .box-input {
 	text-align: justify;
 }
-#input {
-	width: 60%;
-}
+
+
 .counter {
 	color: white
 }
@@ -251,4 +258,3 @@ body {
 			transform: translateX(190px);
   }
 	}
-}
