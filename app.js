@@ -99,4 +99,22 @@ playAgain.addEventListener('click', () => {
 
 playAgain.hidden = true;
 
+//get elements to dispay the rules
+let btnRule = document.getElementById('btnRule');
+let rule = document.getElementById('rule');
+let btnRulesHide = document.getElementById('btnRulesHide');
+
+//btn to dispaly the rules
+btnRule.addEventListener('click', () => {
+  if (rule.style.display = 'none') {
+    rule.style.display = 'block';
+  }
+})
+//btn to hide the rules:
+btnRulesHide.addEventListener('click', () => {
+  if (rule.style.display = 'block') {
+    rule.style.display = 'none';
+  }
+})
+
 
