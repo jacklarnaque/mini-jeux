@@ -70,9 +70,10 @@ button:hover {
     #ff0000 100%
 
 )}
- .button-ok {
-    font-size: 1.5rem;
+ #button-ok {
+    font-size: 1rem;
     margin-top: 5%;
+    padding: 3%;
 
  }
 
