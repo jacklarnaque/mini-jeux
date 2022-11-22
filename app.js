@@ -12,8 +12,8 @@ function getRandomIntInclusive(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 };
 //produit 1 lessive 8 euros
-let randomNumber = getRandomIntInclusive(1, 3);//from
-let randomNumber2 = getRandomIntInclusive(4, 7);//to
+let randomNumber = getRandomIntInclusive(1, 500);//from
+let randomNumber2 = getRandomIntInclusive(501, 1000);//to
 let numberToFind = getRandomIntInclusive(randomNumber, randomNumber2);//number the user need to guess,
 //get the id button 'play' to display the range of numbers
 //have to be between randomNumber & randomNumber2
@@ -37,11 +37,11 @@ function beginAnimation() {
 
 function start () {
     if (randomNumber < randomNumber2) {
-        document.getElementById('numbersRange').textContent = `Veuillez devinez le prix de cet article..Sa valeur est comprise entre ${randomNumber}
-        et ${randomNumber2}.`;
+        document.getElementById('numbersRange').textContent = `Guess the price of this article..The value is between ${randomNumber}
+        and ${randomNumber2}.`;
     } else if (randomNumber > randomNumber2) {
-        document.getElementById('numbersRange').textContent = `Veuillez devinez le prix de cet article..Sa valeur est comprise entre ${randomNumber2}
-        et ${randomNumber}.`
+        document.getElementById('numbersRange').textContent = `Guess the price of this article..The value is between ${randomNumber2}
+        and ${randomNumber}.`
  }
 }
 
@@ -71,11 +71,11 @@ function getValueUser () {
     let answer = document.getElementById("input").value;
     //display error message if user's choice is not into the random range
     if(answer < randomNumber){
-        document.getElementById('numbersRange').textContent = ("Ce nombre n'est pas compris entre " + randomNumber + " et " +randomNumber2 + '.' +
-        ' Veuillez écrire un chiffre plus grand que ' + randomNumber + '!')
+        document.getElementById('numbersRange').textContent = ("This is not a number between " + randomNumber + " and " +randomNumber2 + '.' +
+        ' Please whrite a number bigger than ' + randomNumber + '!')
     } else if(answer > randomNumber2) {
-        document.getElementById('numbersRange').textContent = ("Ce nombre n'est pas compris entre " + randomNumber + " et " +randomNumber2 + '.' +
-         ' Veuillez écrire un chiffre plus petit que ' + randomNumber2 + '!');
+        document.getElementById('numbersRange').textContent = ("This is not a number between " + randomNumber + " and " +randomNumber2 + '.' +
+         ' Please whrite a number smaller than ' + randomNumber2 + '!');
          //information to help user to find the correct number
     } else if(answer > numberToFind){
         document.getElementById('numbersRange').textContent = answer + " is too high! ";
@@ -87,7 +87,7 @@ function getValueUser () {
         playAgain.hidden = false
         endGame();
     } else if (answer = String) {
-    document.getElementById('numbersRange').textContent = " Ceci n'est pas un nombre! ";
+    document.getElementById('numbersRange').textContent = " Sorry, this is not a number! ";
 }
 }
 
