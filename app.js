@@ -61,7 +61,7 @@ playButton.addEventListener('click', function(){
             }
         }, 1000);
     }, 
-    6000)
+    6800)
 //one : true is to avoid the multiples clicks
 }, {once: true});
 
@@ -84,10 +84,19 @@ function getValueUser () {
     } else if(answer == numberToFind){
         document.getElementById('numbersRange').textContent = " You Win! The good number is " + numberToFind + "! " + "You find it in " + (TempsRestant - 1) + " second!";
         divelem.style.display = 'none'
+        playAgain.hidden = false
         endGame();
     } else if (answer = String) {
     document.getElementById('numbersRange').textContent = " Ceci n'est pas un nombre! ";
 }
 }
+
+//Play agin is apearing at the end of the game to start an other game, basicaly refresh the page
+let playAgain = document.getElementById('playAgain')
+playAgain.addEventListener('click', () => {
+  window.location.reload();
+})
+
+playAgain.hidden = true;
 
 
